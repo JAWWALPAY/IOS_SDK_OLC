@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController modalPresentationStyle="fullScreen" id="cuY-SK-kQa" customClass="PayVCNew" customModule="AcceptSDK" customModuleProvider="target">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="yHO-Il-1rG"/>
+                <viewControllerLayoutGuide type="bottom" id="9wZ-A6-AYT"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="qgf-U5-Zkf">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="WD7-iu-bYC">
+                        <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                        <color key="color" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
+                    </activityIndicatorView>
+                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7HR-w6-D6R">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <color key="tintColor" red="0.30980392159999998" green="0.44705882349999998" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                        <items>
+                            <navigationItem id="7Bv-l8-tor">
+                                <barButtonItem key="leftBarButtonItem" image="close_ic" id="a6S-jp-CY6">
+                                    <connections>
+                                        <action selector="barCancelPressed:" destination="cuY-SK-kQa" id="kRB-Jy-ej4"/>
+                                    </connections>
+                                </barButtonItem>
+                            </navigationItem>
+                        </items>
+                    </navigationBar>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="7HR-w6-D6R" firstAttribute="top" secondItem="yHO-Il-1rG" secondAttribute="bottom" id="OFd-K2-o3h"/>
+                    <constraint firstItem="WD7-iu-bYC" firstAttribute="centerX" secondItem="qgf-U5-Zkf" secondAttribute="centerX" id="deP-n5-0bb"/>
+                    <constraint firstItem="WD7-iu-bYC" firstAttribute="centerY" secondItem="qgf-U5-Zkf" secondAttribute="centerY" id="fQJ-pa-0Fs"/>
+                    <constraint firstItem="7HR-w6-D6R" firstAttribute="width" secondItem="qgf-U5-Zkf" secondAttribute="width" id="vfY-wo-eG7"/>
+                    <constraint firstItem="7HR-w6-D6R" firstAttribute="centerX" secondItem="qgf-U5-Zkf" secondAttribute="centerX" id="waY-Kk-dzS"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="navBar" destination="7HR-w6-D6R" id="RXY-pa-nXp"/>
+                <outlet property="spinner" destination="WD7-iu-bYC" id="3M7-H9-Tkh"/>
+            </connections>
+            <point key="canvasLocation" x="-203" y="-90"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="close_ic" width="15" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  AcceptSDK
+
+  Created by Mohamad el mohamady Ghonem on 1/15/20.
+  Copyright © 2020 mahmoud gamal. All rights reserved.
+*/
+
+
+"card" = "Scan Card";
+"information" = "Card Information";
+"name" = "الأسم بالكامل";
+"number" = "Card Number";
+"expiration" = "Expiration";
+"cvv" = "CVV";
+"save" = "Sve this card for future use";
